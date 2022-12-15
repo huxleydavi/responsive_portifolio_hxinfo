@@ -1,4 +1,8 @@
-### portifolio_hxinfo
-Hx Info portifolio of projects and contacts.
+### Portifólio Hx Info
+- Hx Info portifolio of projects and contacts.
+- Simple Control Panel.
+- Edit site configuration directly from the control panel.
+- Dashboard.
+- Visitor counter.
 
-![](images/capa.png)
+![](images/capa1.png)
