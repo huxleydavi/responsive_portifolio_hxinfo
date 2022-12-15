@@ -1,4 +1,5 @@
-//estilos gerais
+/*estilos gerais
+    //estilos gerais
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap')
 *
     margin: 0
@@ -9,14 +10,60 @@ html,body
     height: 100%
     min-height: 100%
     scroll-behavior: smooth
+body
+    overflow-x: hidden
 .container
     max-width: 1280px
     padding: 0 2%
     margin: 0 auto
 .clear
     clear: both
+.w50
+    padding: 0 20px
+    width: 50%
+.left
+    float: left
+input[type=text],
+input[type=button],
+input[type=submit],
+input[type=password],
+textarea
+    -webkit-appearance-: none
+    border-radius: 0
 
-//estilos header
+/*estilos form-ajax
+    //estilos form-ajax
+.sucesso
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    padding: 15px 2%
+    text-align: center
+    color: white
+    z-index: 999
+    color: #3c763d
+    font-weight: bold
+    font-size: 14px
+    background: #DFF2BF
+.overlay-loading
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    z-index: 999
+    background: rgba(0,0,0,0.4)
+.overlay-loading img
+    width: 40px
+    height: 40px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+
+/*estilos header
+    //estilos header
 header
     width: 100%
     position: absolute
@@ -43,7 +90,8 @@ header
 .mobile
     display: none
 
-//estilos bg
+/*estilos bg
+    //estilos bg
 section.bg
     height: 100vh
 .bg > .container
@@ -79,10 +127,11 @@ section.bg
     color: #202020
     background: #c2c2c2
 
-//estilos sobre
+/*estilos sobre
+    //estilos sobre
 section.sobre
-    height: 80vh
-    min-height: 80%
+    height: 100vh
+    min-height: 100%
 .sobre-wrapper
     display: flex
     justify-content: center
@@ -104,6 +153,7 @@ section.sobre
 .sobre-text h2
     margin-bottom: 4px
 .sobre-info
+    margin-top: 80px
     display: flex
     justify-content: center
     align-items: center
@@ -121,7 +171,8 @@ section.sobre
 .sobre-it h2
     margin-bottom: 30px
 
-//estlios produtos
+/*estlios produtos
+    /estilos projetos
 section.projetos
     height: 100vh
     min-height: 100%
@@ -165,7 +216,41 @@ section.projetos
 .sistemas
     display: none
 
-//estilos contato
+/*estilos depoimentos
+    //estilos depoimentos
+section.extras
+    padding: 30px 0px
+    background: #252525
+.servico-container,
+.depoimentos-container
+    padding: 0px 50px
+section.extras .title
+    color: white
+    font-size: 25px
+    margin-bottom: 15px
+.depoimento-single
+    padding: 15px 0px
+    border-bottom: 1px solid rgb(0, 0, 0)
+p.depoimento-descricao
+    font-size: 15px
+    color: white
+    font-weight: 300
+p.nome-autor
+    font-size: 15px
+    color: white
+    margin-top: 5px
+/*estilos servicos
+    //estilos servicos
+.servicos ul
+    margin: 20px 0px
+.servicos li
+    margin-bottom: 15px
+    font-size: 15px
+    color: white
+    font-weight: 300
+
+/*estilos contato
+    //estilos contato
 section.contato 
     height: 80vh
     min-height: 80%
@@ -214,7 +299,8 @@ input[type="submit"]:hover
     color: #202020
     background: #c2c2c2
 
-//estilos links uteis
+/*estilos links uteis
+    //estilos links uteis
 section.links 
     height: 95vh
     min-height: 95%
@@ -238,7 +324,8 @@ section.links
     margin-left: 250px
 .links-logo img
     height: 250px
-//estilos footer
+/*estilos footer
+    //estilos footer
 footer
     height: 250px
 .footer-wrapper
