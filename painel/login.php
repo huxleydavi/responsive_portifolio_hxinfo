@@ -63,7 +63,7 @@
 			<input type="password" name="password" placeholder="Senha..." required>
 			<div class="form-group-login left">
 				<input type="submit" name="acao" value="Logar!">
-				<a href="<?php echo INCLUDE_PATH; ?>">Voltar</a>
+				<!--<a href="?php echo INCLUDE_PATH; ?">Voltar</a>-->
 			</div>
 			<div class="form-group-login right">
 				<label>Lembrar-me</label>

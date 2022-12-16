@@ -3,7 +3,7 @@
 ?>
 
 <div class="box-content">
-	<h2><i class="fa fa-pencil"></i> Editar Configurações do Menu</h2>
+	<h2><i class="fa fa-pencil"></i> Editar Configurações da Chamada</h2>
 
 	<form method="post" enctype="multipart/form-data">
 

@@ -3,7 +3,7 @@
 ?>
 
 <div class="box-content">
-	<h2><i class="fa fa-pencil"></i> Editar Configurações do Site</h2>
+	<h2><i class="fa fa-pencil"></i> Editar Configurações do Sobre</h2>
 
 	<form method="post" enctype="multipart/form-data">
 
