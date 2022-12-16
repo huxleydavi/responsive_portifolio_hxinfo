@@ -38,12 +38,12 @@
 
              <div class="desktop">
                 <ul>
-                    <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>">Início</a></li>
-                    <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
-                    <li><a title="Porjetos" href="<?php echo INCLUDE_PATH; ?>projetos">Projetos</a></li>
-                    <li><a title="Contato" href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
-                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
-                    <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>links">Links Úteis</a></li>
+                    <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>"><?php echo $menuSite['menu1']; ?></a></li>
+                    <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>sobre"><?php echo $menuSite['menu2']; ?></a></li>
+                    <li><a title="Porjetos" href="<?php echo INCLUDE_PATH; ?>projetos"><?php echo $menuSite['menu3']; ?></a></li>
+                    <li><a title="Contato" href="<?php echo INCLUDE_PATH; ?>depoimentos"><?php echo $menuSite['menu4']; ?></a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato"><?php echo $menuSite['menu5']; ?></a></li>
+                    <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>links"><?php echo $menuSite['menu6']; ?></a></li>
                 </ul>
              </div><!--desktop-->
 
@@ -52,11 +52,12 @@
 			 		<i class="fa fa-bars" aria-hidden="true"></i>
 			 	</div>
                 <ul>
-                    <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>">Início</a></li>
-                    <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>">Sobre</a></li>
-                    <li><a title="Porjetos" href="<?php echo INCLUDE_PATH; ?>">Projetos</a></li>
-                    <li><a title="Contato" href="<?php echo INCLUDE_PATH; ?>">Contato</a></li>
-                    <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>">Links Úteis</a></li>
+                    <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>"><?php echo $menuSite['menu1']; ?></a></li>
+                    <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>sobre"><?php echo $menuSite['menu2']; ?></a></li>
+                    <li><a title="Porjetos" href="<?php echo INCLUDE_PATH; ?>projetos"><?php echo $menuSite['menu3']; ?></a></li>
+                    <li><a title="Contato" href="<?php echo INCLUDE_PATH; ?>depoimentos"><?php echo $menuSite['menu4']; ?></a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato"><?php echo $menuSite['menu5']; ?></a></li>
+                    <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>links"><?php echo $menuSite['menu6']; ?></a></li>
                 </ul>
              </div><!--mobile-->
              <div class="clear"></div>
@@ -68,9 +69,9 @@
                 <div class="bg-person"></div><!--bg-person-->
             </div><!--bg-img-->
             <div class="bg-text">
-                <h2>Hx Info, uma agência de publicade.</h2>
-                <p>Criamos sistemas profissionais para turbinar o seu negócio!</p>
-                <a href="#">Clique e saiba mais</a>
+                <h2><?php echo $chamadaSite['titulo']; ?></h2>
+                <p><?php echo $chamadaSite['sub_titulo']; ?></p>
+                <a href="#"><?php echo $chamadaSite['botao']; ?></a>
             </div><!--bg-text-->
         </div><!--container-->
     </section><!--bg-->

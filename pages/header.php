@@ -2,7 +2,15 @@
 <?php Site::updateUsuarioOnline(); ?>
 <?php Site::contador(); ?>
 <?php
-	$infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_site.config`");
+	$menuSite = MySql::conectar()->prepare("SELECT * FROM `tb_menu.config`");
+	$menuSite->execute();
+	$menuSite = $menuSite->fetch();
+
+    $chamadaSite = MySql::conectar()->prepare("SELECT * FROM `tb_chamada.config`");
+	$chamadaSite->execute();
+	$chamadaSite = $chamadaSite->fetch();
+
+    $infoSite = MySql::conectar()->prepare("SELECT * FROM `tb_sobre.config`");
 	$infoSite->execute();
 	$infoSite = $infoSite->fetch();
 ?>
