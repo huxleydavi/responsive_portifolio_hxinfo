@@ -1,9 +1,9 @@
 $(function(){
 
 	//Aqui vai todo nosso código de javascript.
-	$('nav.mobile').click(function(){
+	$('.mobile').click(function(){
 		//O que vai acontecer quando clicarmos na nav.mobile!
-		var listaMenu = $('nav.mobile ul');
+		var listaMenu = $('.mobile ul');
 		//Abrir menu através do fadein
 		/*
 		if(listaMenu.is(':hidden') == true){

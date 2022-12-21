@@ -25,10 +25,6 @@
                 break;
 		}
 	?>
-	<div class="sucesso"><i class="fa fa-check"></i> Formulário enviado com sucesso!</div>
-	<div class="overlay-loading">
-		<img src="<?php echo INCLUDE_PATH ?>images/ajax-loader.gif" />
-	</div><!--overlay-loading-->
 
     <header>
         <div class="container">
@@ -65,9 +61,8 @@
 
     <section class="bg">
         <div class="container">
-            <div class="bg-img">
-                <div class="bg-person"></div><!--bg-person-->
-            </div><!--bg-img-->
+            <div class="fundo"></div>
+            <div class="bg-img"></div><!--bg-img-->
             <div class="bg-text">
                 <h2><?php echo $chamadaSite['titulo']; ?></h2>
                 <p><?php echo $chamadaSite['sub_titulo']; ?></p>
@@ -128,103 +123,128 @@
 
     <section class="projetos" id="projetos">
         <div class="container">
-        <h2 style="color: white; padding:50px 0px";>Projetos</h2>
+        <div class="title">
+            <h2>Projetos</h2>
+        </div><!--title-->
         <div class="breadcrumb">
-            <a href="" id="todos">Todos</a>
-            <a href="" id="vendas">Vendas</a>
-            <a href="" id="landing">Landing-page</a>
-            <a href="" id="sistemas">Sistemas</a>
+            <button onclick="sh1()">Todos</button>
+            <button onclick="sh2()">Vendas</button>
+            <button onclick="sh3()">Landin Page</button>
+            <button onclick="sh4()">Sistemas</button>
         </div><!--breadcrumb-->
-            <div class="projetos-wrapper todos">
+
+            <div class="projetos-wrapper todos" id="todos">
 
                 <div class="projetos-single">
-                    <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
+                <div class="overlay"></div>
+                    <a href=""><img src="images/delivery.png"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
                 <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
+                    <a herf=""><img src="images/delivery.png"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
                 <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
+                    <a herf=""><img src="images/delivery.png"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
                 <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
+                    <a herf=""><img src="images/delivery.png"/></a>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf=""><img src="images/delivery.png"/></a>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf=""><img src="images/delivery.png"/></a>
                 </div><!--projetos-single-->
 
             </div><!--projetos-wrapper-->
 
-            <div class="projetos-wrapper vendas">
+            <div class="projetos-wrapper vendas" id="vendas">
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf="#"><img src="images/travel.png"/></a>
+                    <p>Website Delivery Resposnivo</p>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-            </div><!--projetos-wrapper-->
-
-            <div class="projetos-wrapper landing">
-
-                <div class="projetos-single">
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
             </div><!--projetos-wrapper-->
 
-            <div class="projetos-wrapper sistemas">
+            <div class="projetos-wrapper landing" id="landing">
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf="#"><img src="images/watches.png"/></a>
+                    <p>Website Delivery Resposnivo</p>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf="#"><img src="images/delivery.png"/></a>
+                    <p>Website Delivery Resposnivo</p>
+                </div><!--projetos-single-->
+
+            </div><!--projetos-wrapper-->
+
+            <div class="projetos-wrapper sistemas" id="sistemas">
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf="#"><img src="images/sistems.png"/></a>
+                    <p>Website Delivery Resposnivo</p>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
+                <div class="overlay"></div>
+                    <a herf="#"><img src="images/delivery.png"/></a>
+                    <p>Website Delivery Resposnivo</p>
+                </div><!--projetos-single-->
+
+                <div class="projetos-single">
+                <div class="overlay"></div>
                     <a herf="#"><img src="images/delivery.png"/></a>
                     <p>Website Delivery Resposnivo</p>
                 </div><!--projetos-single-->
@@ -236,9 +256,11 @@
 
         <section class="extras">
 
-        <div class="center">
+        <div class="container">
             <div id="depoimentos" class="w50 left depoimentos-container">
-                <h2 class="title">Depoimentos dos nossos clientes</h2>
+            <div class="title">
+                <h2>Depoimentos</h2>
+            </div><!--title-->
                 <?php
                     $sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.depoimentos` ORDER BY order_id ASC LIMIT 3");
                     $sql->execute();
@@ -252,7 +274,9 @@
                 <?php } ?>
             </div><!--w50-->
             <div id="servicos" class="w50 left servicos-container">
-                <h2 class="title">Serviços</h2>
+            <div class="title">
+                <h2>Serviços</h2>
+            </div><!--title-->
                 <div class="servicos">
                 <ul>
                     <?php
@@ -267,73 +291,42 @@
                 </div><!--servicos-->
             </div><!--w50-->
             <div class="clear"></div>
-        </div><!--center-->
+        </div><!--container-->
     </section><!--extras-->
 
     <section class="contato" id="contato">
         <div class="container">
-        <h2 style="color: black; padding:20px 0px";>Contato</h2>
+        <div class="title">
+            <h2 style="color:black;">Contato</h2>
+        </div><!--title-->
             <div class="contato-wrapper">
                 <div class="contato-left">
                 </div><!--contato-left-->
                 <div class="contato-rigth">
-                    <form>
+                <!--<form class="ajax-form" method="post" action="">
                         <input required type="text" name="nome" placeholder="Nome...">
                         <input required type="text" name="text" id="telefone" maxlength="15" placeholder="Telefone...">
                         <input required type="email" name="email" placeholder="Email...">
                         <textarea placeholder="Mensagem..."></textarea>
+                        <input type="hidden" name="identificador" value="form_contato" />
                         <input type="submit" value="Enviar" nome="acao">
+                    </form>-->
+                    <form action="https://formsubmit.co/huxdavi@gmail.com" method="POST">
+                        <input required type="text" name="name" placeholder="Nome..." />
+                        <input required type="text" name="telefone" id="telefone" placeholder="Telefone..." maxlength="15"/>
+                        <input required type="email" name="email" placeholder="E-mail..." />
+                        <textarea name="message" placeholder="Deixe sua mensagem... (Opcional)"></textarea>
+                        <input type="submit" name="button" value="Enviar" />
+                        <!--Form Submit-->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+                        <!--<input type="hidden" name="_cc" value="hs.corpp@gmail.com">-->
+                        <input type="hidden" name="_subject" value="Nova mensagem!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://portifoliohx.x10.mx/obrigado.php">
+                    </form>
                     </form>
                 </div><!--contato-rigth-->
             </div><!--contato-wrapper-->
         </div><!--container-->
     </section>
-
-    <section <?php if(isset($pagina404) && $pagina404 == true); ?> class="links" id="links">
-        <div class="container">
-        <h2 style="color: white; padding:50px 0px";>Links Úteis</h2>
-            <div class="links-wrapper">
-                <div class="links-left">
-                    <a href="">Sobre</a>
-                    <a href="">Produtos</a>
-                    <a href="">Contato</a>
-                    <a href="">Mais informações</a>
-                    <a href="">HS Corporation</a>
-                    <a href="">Hx Info</a>
-                    <a href="">Hyrms Publicidade</a>
-                </div><!--links-left-->
-                <div class="links-rigth">
-                    <a href="">Whatsapp</a>
-                    <a href="">Instagram</a>
-                    <a href="">Git Hub</a>
-                    <a href="">Twitter</a>
-                    <a href="">Linkdin</a>
-                </div><!--links-rigth-->
-                <div class="links-logo">
-                    <img src="images/logo.png">
-                </div>
-            </div><!--links-wrapper-->
-
-            <footer>
-                <div class="footer-wrapper">
-                    <div class="footer-dados">
-                    <a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i><z>+55 (33) 99802-3970</z></a>
-                    <a href=""><i class="fab fa-instagram" aria-hidden="true"></i><z>@hxinfo</z></a>
-                    <a href=""><i class="fab fa-github" aria-hidden="true"></i><z>huxleydavi</z></a>
-                    </div><!--footer-dados-->
-                </div><!--footer-wrapper-->
-            </footer>
-
-        </div><!--container-->
-    </section><!--links-->
-
-    <div class="copyrigth">
-        <p>Hx Info &copy; | Todos os diretos reservados</p>
-    </div>
-
-
-    <script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
-    <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
-    <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
-    <script src="js/mask.js"></script>
-    <script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>

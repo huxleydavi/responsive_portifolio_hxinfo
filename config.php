@@ -13,8 +13,7 @@
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel');
-
-
+	
 	//Conectar com banco de dados!
 	define('HOST','localhost');
 	define('USER','root');

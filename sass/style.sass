@@ -14,6 +14,11 @@ body
     max-width: 1280px
     padding: 0 2%
     margin: 0 auto
+.title
+    color: white
+    padding: 50px 0px
+.title h2
+    font-size: 28px
 .clear
     clear: both
 .w50
@@ -31,45 +36,15 @@ textarea
     border: 1px solid #000
     border-radius: 0
 
-/*estilos form-ajax
-    //estilos form-ajax
-.sucesso
-    display: none
-    position: fixed
-    left: 0
-    top: 0
-    width: 100%
-    padding: 15px 2%
-    text-align: center
-    color: white
-    z-index: 999
-    color: #3c763d
-    font-weight: bold
-    font-size: 14px
-    background: #DFF2BF
-.overlay-loading
-    display: none
-    position: fixed
-    width: 100%
-    height: 100%
-    z-index: 999
-    background: rgba(0,0,0,0.4)
-.overlay-loading img
-    width: 40px
-    height: 40px
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%,-50%)
-
 /*estilos header
     //estilos header
 header
+    z-index: 2
     width: 100%
     position: absolute
     top: 0
     left: 0
-    box-shadow: 2px 2px 6px 2px #131313
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.1)
 .logo
     width: 100px
     height: 90px
@@ -89,27 +64,62 @@ header
     color: white
 .mobile
     display: none
-
+    float: right
+    width: 100%
+.botao-menu-mobile
+    position: absolute
+    top: 0
+    right: 0
+    padding-top: 30px
+    padding-right: 30px
+.botao-menu-mobile i
+    color: white
+    font-size: 30px
+.mobile ul
+    display: none
+    margin-top: -15px
+    width: 100%
+    list-style-type: none
+    text-align: center
+.mobile ul li
+    padding: 8px
+    border-bottom: 1px solid black
+    background: white
+    width: 100%
+.mobile ul li a
+    font-weight: 500
+    padding: 8px 50px
+    text-decoration: none
+    color: #323232
+    width: 100%
+    transition: all 0.5s
+.mobile ul li a:hover
+    color: #161616
 /*estilos bg
     //estilos bg
+section.bg
+    height: 100vh
 .bg > .container
     max-width: 100%
     padding: 0
-.bg-img
+.fundo
+    z-index: 1
+    position: absolute
+    background: black
     height: 100vh
-    background: #101112
-.bg-person
-    position: relative
-    top: 130px
-    height: 84vh
-    width: 50%
-    background-image: url('../images/person.png')
+    width: 100%
+    opacity: 0.4
+.bg-img
+    z-index: 2
+    height: 100vh
+    background-image: url('../images/bg.jpg')
     background-size: cover
     background-position: center
 .bg-text
+    z-index: 2
     position: absolute
     top: 40%
-    left: 50%
+    left: 8%
     color: white
 .bg-text h2
     font-size: 30px
@@ -135,6 +145,7 @@ section.sobre
     justify-content: center
     flex-wrap: wrap
 .sobre-dots
+    z-index: 2
     position: relative
     top: -50px
     padding: 30px
@@ -221,15 +232,14 @@ section.projetos
 /*estilos depoimentos
     //estilos depoimentos
 section.extras
-    padding: 30px 0px
+    padding-bottom: 50px
     background: #252525
 .servicos-container,
 .depoimentos-container
-    padding: 0px 50px
-section.extras .title
-    color: white
-    font-size: 25px
-    margin-bottom: 15px
+    padding-bottom: 20px
+.servicos-container > .title,
+.depoimentos-container > .title
+    padding: 50px 0px 20px 0px
 .depoimento-single
     padding: 15px 0px
     border-bottom: 1px solid rgb(0, 0, 0)
@@ -300,7 +310,8 @@ input[type="submit"]:hover
 
 /*estilos links uteis
     //estilos links uteis
-section.links 
+section.links
+    padding: 2px
     background: #101112
 .links-wrapper
     display: flex
@@ -363,17 +374,8 @@ footer
 @media (max-width: 1024px)
     .desktop
         display: none
-    .bg-person
-        top: 140px
-        height: 82vh
-    .bg-text
-        left: 40%
-    .bg-text h2
-        font-size: 28px
-    .bg-text p
-        font-size: 19px
-    .bg-text a
-        font-size: 15px
+    .mobile
+        display: block
     .sobre-dots
         width: 30%
         height: 260px
@@ -395,15 +397,6 @@ footer
 /*responsive 768px
     //responsive 768px
 @media (max-width: 768px)
-    .bg-text
-        left: 35%
-    .bg-text h2
-        font-size: 20px
-    .bg-text p
-        font-size: 15px
-        margin-bottom: 12px
-    .bg-text a
-        font-size: 13px
     .sobre-dots
         width: 100%
         height: 190px
@@ -411,6 +404,7 @@ footer
     .sobre-info
         margin-top: 20px
     .sobre-img img
+        overflow-x: hidden
         margin-left: 80px
     .servicos-container,
     .depoimentos-container
@@ -428,20 +422,30 @@ footer
         margin-top: 40px
     .links-logo img
         height: 150px
+    .footer-dados
+        padding: 20px
     .footer-dados a
-        font-size: 20px
+        display: flex
+        flex-wrap: wrap
+        padding: 0px
+        margin: 30px
     .footer-dados i
         font-size: 30px
     .footer-dados z
-        top: -4px
-    .copyrigth p 
+        top: 2px
+    .copyrigth p
         font-size: 15px
 /*responsive 600px
     //responsive 600px
 @media (max-width: 600px)
-    .bg-person
-        top: 200px
-        height: 76vh
+    .bg-text
+        left: 4%
+    .bg-text h2
+        font-size: 28px
+    .bg-text p
+        font-size: 17px
+    .bg-text a
+        font-size: 14px
     section.sobre
         padding-bottom: 0
     .sobre-it
@@ -454,56 +458,63 @@ footer
     .sobre-img img
         margin-top: 40px
         margin-left: 0
+        position: relative
+        top: 5px
+    .breadcrumb
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        flex-direction: column
     .breadcrumb button
-        margin: 0px 20px 20px 20px
+        margin: 10px 0px
     .servicos-container,
     .depoimentos-container
         text-align: center
     .links-logo
         display: none
     .links-left
-        margin-left: 20px
+        margin-left: 0px
     footer
         width: 100%
-    .footer-wrapper
-        width: 100%
-    .footer-dados
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
 /*responsive 500px
     //responsive 500px
 @media (max-width: 500px)
-    div.container > h2
+    .title
         text-align: center
+        padding: 30px 0px
     .sobre-dots
         height: 220px
+    .projetos-single
+        padding: 0px
+    .projetos-single img
+        padding: 5px 50px
     .contato-left
         width: 25%
     .contato-rigth
         width: 75%
     .links-left
-        margin-left: 10px
         margin-right: 100px
+/*responsive 470px
+    //responsive 470px
+@media (max-width: 470px)
+    .sobre-img img
+        width: 80%
+    .links-wrapper
+        padding: 2%
+/*responsive 400
+    //responsive 400px
+@media (max-width: 400px)
+    .projetos-single
+        padding: 0px
 /*responsive 375px
     //responsive 375px
 @media (max-width: 375px)
-    .bg-img
-        height: 90vh
-    .bg-person
-        top: 200px
-        height: 60vh
-    .bg-text
-        left: 35%
     .bg-text h2
-        font-size: 15px
+        font-size: 25px
     .bg-text p
-        font-size: 13px
-        margin-bottom: 8px
+        font-size: 17px
     .bg-text a
-        font-size: 11px
-        padding: 8px
+        font-size: 14px
     .sobre-dots
         height: 220px
     .sobre-text i
@@ -521,7 +532,7 @@ footer
         width: 350px
         height: 150px
     .projetos-single img
-        padding: 0px 30px
+        padding: 5px 30px
         width: 350px
         height: 150px
     .contato-left
@@ -529,21 +540,24 @@ footer
     .contato-rigth
         width: 70%
     .links-wrapper
-        text-align: center
         justify-content: center
+        align-items: center
         flex-wrap: wrap
     .links-left
         margin-left: 0px
         margin-right: 0px
-    .footer-dados a
-        padding: 20px
     .copyrigth p 
         font-size: 14px
+/*responsive 360px
+    //responsive 360px
+@media (max-width: 360px)
+    .footer-dados i
+        font-size: 30px
+    .footer-dados z
+        display: none
 /*responsive 320px
     //responsive 320px
 @media (max-width: 320px)
-    .bg-text
-        left: 33%
     .sobre-dots
         height: 260px
     .breadcrumb button
@@ -563,3 +577,13 @@ footer
         width: 67%
     input[type="submit"]
         width: 120px
+    .links-left,
+    .links-rigth
+        text-align: center
+    .footer-dados a
+        margin: 20px
+        font-size: 17px
+    .footer-dados i
+        font-size: 30px
+    .footer-dados z
+        top: 4px
