@@ -30,9 +30,9 @@
         <div class="container">
             <div class="logo">
                 <a href="<?php echo INCLUDE_PATH; ?>"><img src="images/logo.png" /></a>
-             </div><!--logo-->
+            </div><!--logo-->
 
-             <div class="desktop">
+            <div class="desktop">
                 <ul>
                     <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>"><?php echo $menuSite['menu1']; ?></a></li>
                     <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>sobre"><?php echo $menuSite['menu2']; ?></a></li>
@@ -41,12 +41,12 @@
                     <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato"><?php echo $menuSite['menu5']; ?></a></li>
                     <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>links"><?php echo $menuSite['menu6']; ?></a></li>
                 </ul>
-             </div><!--desktop-->
+                </div><!--desktop-->
 
-             <div class="mobile">
-             <div class="botao-menu-mobile">
-			 		<i class="fa fa-bars" aria-hidden="true"></i>
-			 	</div>
+                <div class="mobile">
+                <div class="botao-menu-mobile">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
                 <ul>
                     <li><a title="Início" href="<?php echo INCLUDE_PATH; ?>"><?php echo $menuSite['menu1']; ?></a></li>
                     <li><a title="Sobre" href="<?php echo INCLUDE_PATH; ?>sobre"><?php echo $menuSite['menu2']; ?></a></li>
@@ -55,20 +55,26 @@
                     <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato"><?php echo $menuSite['menu5']; ?></a></li>
                     <li><a title="Links Úteis" href="<?php echo INCLUDE_PATH; ?>links"><?php echo $menuSite['menu6']; ?></a></li>
                 </ul>
-             </div><!--mobile-->
-             <div class="clear"></div>
+            </div><!--mobile-->
+            <div class="clear"></div>
     </header>
 
     <section class="bg">
         <div class="container">
-            <div class="fundo"></div>
-            <div class="bg-img"></div><!--bg-img-->
-            <div class="bg-text">
+            <div class="fundo"></div> 
+            <div class="banner-container">
+                <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/<?php echo $chamadaSite['img1']; ?>.jpg');" class="banner-single"></div><!--banner-single-->
+                <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/<?php echo $chamadaSite['img2']; ?>.jpg');" class="banner-single"></div><!--banner-single-->
+                <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/<?php echo $chamadaSite['img3']; ?>.jpg');" class="banner-single"></div><!--banner-single-->
+                <!--<div class="overlay"></div><!--overlay-->
+            </div><!--bg-img-->
+            <div class="bg-text" style="display:<?php echo $chamadaSite['textdisplay'] ?>;">
                 <h2><?php echo $chamadaSite['titulo']; ?></h2>
                 <p><?php echo $chamadaSite['sub_titulo']; ?></p>
-                <a href="#"><?php echo $chamadaSite['botao']; ?></a>
+                <!--<a href="#sobre" style="background:<?php echo $chamadaSite['corbotao'] ?>;"><?php echo $chamadaSite['botao']; ?></a>-->
             </div><!--bg-text-->
         </div><!--container-->
+        <div class="bullets"></div><!--bullets-->
     </section><!--bg-->
 
     <section class="sobre" id="sobre">
@@ -115,7 +121,7 @@
 
                 </div><!--sobre-it-->
                 <div class="sobre-img">
-                    <img src="images/sobre.png" />
+                    <img src="images/<?php echo $infoSite['sobreimg']; ?>.png" />
                 </div><!--sobre-img-->
             </div><!--sobre-info-->
         </div><!--container-->
@@ -126,127 +132,37 @@
         <div class="title">
             <h2>Projetos</h2>
         </div><!--title-->
-        <div class="breadcrumb">
-            <button onclick="sh1()">Todos</button>
-            <button onclick="sh2()">Vendas</button>
-            <button onclick="sh3()">Landin Page</button>
-            <button onclick="sh4()">Sistemas</button>
-        </div><!--breadcrumb-->
 
-            <div class="projetos-wrapper todos" id="todos">
+            <div class="projetos-wrapper">
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a href=""><img src="images/delivery.png"/></a>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/mountainview.php"><img src="images/mountain.jpg"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf=""><img src="images/delivery.png"/></a>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/lumicorp.php"><img src="images/lumi.jpg"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf=""><img src="images/delivery.png"/></a>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/florastore.php"><img src="images/flora.jpg"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf=""><img src="images/delivery.png"/></a>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/monguilhott.php"><img src="images/mong.jpg"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf=""><img src="images/delivery.png"/></a>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/metaloop.php"><img src="images/meta.jpg"/></a>
                 </div><!--projetos-single-->
 
                 <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf=""><img src="images/delivery.png"/></a>
-                </div><!--projetos-single-->
-
-            </div><!--projetos-wrapper-->
-
-            <div class="projetos-wrapper vendas" id="vendas">
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/travel.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-            </div><!--projetos-wrapper-->
-
-            <div class="projetos-wrapper landing" id="landing">
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/watches.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-            </div><!--projetos-wrapper-->
-
-            <div class="projetos-wrapper sistemas" id="sistemas">
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/sistems.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
-                </div><!--projetos-single-->
-
-                <div class="projetos-single">
-                <div class="overlay"></div>
-                    <a herf="#"><img src="images/delivery.png"/></a>
-                    <p>Website Delivery Resposnivo</p>
+                <!--<div class="overlay"></div>-->
+                    <a href="pages/produtos/rmveiculos.php"><img src="images/rm.jpg"/></a>
                 </div><!--projetos-single-->
 
             </div><!--projetos-wrapper-->
@@ -257,10 +173,10 @@
         <section class="extras">
 
         <div class="container">
-            <div id="depoimentos" class="w50 left depoimentos-container">
-            <div class="title">
+        <div class="title">
                 <h2>Depoimentos</h2>
             </div><!--title-->
+            <div id="depoimentos" class="w50 left depoimentos-container">
                 <?php
                     $sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.depoimentos` ORDER BY order_id ASC LIMIT 3");
                     $sql->execute();
@@ -270,17 +186,21 @@
                 <div class="depoimento-single">
                     <p class="depoimento-descricao">"<?php echo $value['depoimento']; ?>"</p>
                     <p class="nome-autor"><?php echo $value['nome']; ?> - <?php echo $value['data']; ?></p>
+                    <img src="images/<?php echo $value['imgdepoimento']; ?>.png" />
                 </div><!--depoimento-single-->
                 <?php } ?>
             </div><!--w50-->
-            <div id="servicos" class="w50 left servicos-container">
             <div class="title">
                 <h2>Serviços</h2>
             </div><!--title-->
+            <div id="servicos" class="w50 left servicos-container">
+            <div class="servicos-img">
+                    <img src="images/servicos.jpg" />
+                </div>
                 <div class="servicos">
                 <ul>
                     <?php
-                    $sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.servicos` ORDER BY order_id ASC LIMIT 6");
+                    $sql = MySql::conectar()->prepare("SELECT * FROM `tb_site.servicos` ORDER BY order_id ASC LIMIT 7");
                     $sql->execute();
                     $servicos = $sql->fetchAll();
                     foreach ($servicos as $key => $value) {
@@ -289,6 +209,7 @@
                     <?php } ?>
                 </ul>
                 </div><!--servicos-->
+
             </div><!--w50-->
             <div class="clear"></div>
         </div><!--container-->

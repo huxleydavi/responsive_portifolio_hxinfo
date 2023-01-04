@@ -49,6 +49,11 @@
 			<textarea name="descricao"><?php echo $site['descricao']; ?></textarea>
 		</div><!--form-group-->
 
+		<div class="form-group">
+			<label>Imagem:</label>
+			<input type="text" name="sobreimg" value="<?php echo $site['sobreimg']; ?>" />
+		</div><!--form-group-->
+
 
 		
 		<div class="form-group">

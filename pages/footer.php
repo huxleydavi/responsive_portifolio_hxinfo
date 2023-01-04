@@ -53,9 +53,9 @@
         </script>-->
     <script src="<?php echo INCLUDE_PATH; ?>js/constants.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/scripts.js"></script>
-    <script src="<?php echo INCLUDE_PATH; ?>js/show-hide.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/mask.js"></script>
     <script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
 
 </body>
 </html>

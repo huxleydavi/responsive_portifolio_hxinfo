@@ -22,7 +22,7 @@
     <link rel="icon" href="perfil.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
     <!-- MS, fb & Whatsapp -->
 
     <!-- MS Tile - for Microsoft apps-->
-    <meta name="msapplication-TileImage" content="https://i.imgur.com/J3IACLU.jpg">    
+    <meta name="msapplication-TileImage" content="https://i.imgur.com/ru9Tel6.jpg">    
 
     <!-- fb & Whatsapp -->
 
@@ -44,15 +44,15 @@
 
     <!-- Image to display -->
     <!-- Replace   «example.com/image01.jpg» with your own -->
-    <meta property="og:image" content="https://i.imgur.com/J3IACLU.jpg">
+    <meta property="og:image" content="https://i.imgur.com/ru9Tel6.jpg">
 
     <!-- No need to change anything here -->
     <meta property="og:type" content="website" />
     <meta property="og:image:type" content="image/jpeg">
 
     <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
-    <meta property="og:image:width" content="2000">
-    <meta property="og:image:height" content="2000">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
 
     <!-- Website to visit when clicked in fb or WhatsApp-->
     <meta property="og:url" content="https://portifoliohx.x10.mx/">

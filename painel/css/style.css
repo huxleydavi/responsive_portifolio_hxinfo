@@ -436,6 +436,17 @@ a.btn.order{background: /*#0091ea*/#027ec9;}
 	padding-left: 8px;
 }
 
+.box-content form input[type=color]{
+	background-color: transparent;
+	margin-top:8px;
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+	width: 10%;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
 .box-content form textarea{
 	background-color: transparent;
 	margin-top:8px;

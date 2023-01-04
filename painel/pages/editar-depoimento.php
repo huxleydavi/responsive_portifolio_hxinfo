@@ -39,6 +39,11 @@
 		</div><!--form-group-->
 
 		<div class="form-group">
+			<label>Imagem:</label>
+			<input type="text" name="imgdepoimento" value="<?php echo $depoimento['imgdepoimento']; ?>">
+		</div><!--form-group-->
+
+		<div class="form-group">
 			<input type="hidden" name="id" value="<?php echo $id; ?>">
 			<input type="hidden" name="nome_tabela" value="tb_site.depoimentos" />
 			<input type="submit" name="acao" value="Atualizar!">

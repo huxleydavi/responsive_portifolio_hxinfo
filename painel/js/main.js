@@ -65,11 +65,15 @@ $(function(){
 			var txt;
 			var r = confirm("Deseja excluir o registro?");
 			if (r == true) {
-			    return true;
+				return true;
 			} else {
-			    return false;
+				return false;
 			}
 	})
 
 
-})
+});
+
+$(function(){
+	
+});

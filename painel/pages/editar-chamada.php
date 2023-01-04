@@ -33,6 +33,29 @@
 			<input type="text" name="botao" value="<?php echo $site['botao']; ?>" />
 		</div><!--form-group-->
 
+		<div class="form-group">
+			<label>Cor Botão:</label>
+			<input type="color" name="corbotao" value="<?php echo $site['corbotao']; ?>" />
+			<!--<input type="color" name="corbotaohover" value="<?php echo $site['corbotaohover']; ?>" />-->
+		</div><!--form-group-->
+
+
+		<?php
+			for($i = 1; $i <= 3; $i++){
+		?>
+
+		<div class="form-group">
+			<label>Imagem <?php echo $i; ?>:</label>
+			<input type="text" name="img<?php echo $i; ?>" value="<?php echo $site['img'.$i]; ?>" />
+		</div><!--form-group-->
+
+		<?php } ?>
+
+		<div class="form-group">
+			<label>Texto nas imagens:</label>
+			<input type="checkbox" name="textdisplay" id="textdisplay" value="<?php echo $site['textdisplay']; ?>" />
+		</div><!--form-group-->
+
 
 
     <div class="form-group">
