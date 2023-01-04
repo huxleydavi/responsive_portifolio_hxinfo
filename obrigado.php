@@ -1,2 +1,2 @@
-<?php include("pages/header.php");?>
-<?php include("pages/footer.php");?>
+<h1>Obrigado</h1>
+<a href="index.php">Voltar</a>

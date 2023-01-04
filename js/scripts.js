@@ -51,7 +51,7 @@ $(function(){
 
 		var divScroll = $(elemento).offset().top;
 
-		$('html,body').animate({scrollTop:divScroll},1500);
+		$('html,body').animate({scrollTop:divScroll},500);
 	}
 
 })
