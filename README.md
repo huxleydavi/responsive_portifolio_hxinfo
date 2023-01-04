@@ -6,4 +6,4 @@
 - Visitor counter.
 - Responsive.
 
-![](images/capa1.jpg)
+![](/preview.jpg)
