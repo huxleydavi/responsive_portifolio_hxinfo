@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
 
-    <title>Hx Info</title>
+    <title>Projetos - Hx Info</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <a href=""><img src="images/logo.png" /></a>
+            <a href="index.php"><img src="images/logo.png" /></a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="projetos.php">Projetos</a></li>
+                <li class="selected"><a href="projetos.php">Projetos</a></li>
                 <li><a href="contato.php">Contato</a></li>
                 <li><a href="parceiros.php">Parceiros</a></li>
             </ul>
@@ -28,98 +28,101 @@
         </div>
     </header>
 
-    <section class="bg">
-        <div class="container">
-            <div class="bg-img"></div>
-            <div class="bg-text">
-                <h2>Huxley Davi</h2>
-                <p>Desenvolvedor Web</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="serviços" class="serviços">
+    <section class="sprojetos">
         <div class="container">
 
             <div class="title">
-                <h2><x>Meu</x> <z>trabalho.</z></h2>
+                <h2><x>Veja meus<br/></x> <z>projetos.</z></h2>
                 <p>O que você precisa?</p>
+                <img src="images/seo.png" />
             </div>
 
-            <div class="serviços-wrapper">
+            <div class="sprojetos-wrapper dw">
 
-                <div class="serviços-single">
-                    <div class="serviço-text">
-                        <div class="serviço-img"><img src="images/front-end.png" /></div>
-                        <h2>Front-end</h2>
-                        <p>Desenvolvo projetos de <b>WebApp</b>, sites, <b>e-commerce</b>, pequenas integrações, <b>layouts de página</b>, wireframes, <b>landing page</b>.</p>
+                <div class="sprojetos-linha1">
+                    <div class="sprojetos-single">
+                        <a href="pages/mountaintour.php"><img src="images/mountain.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/heysam.php"><img src="images/hey.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/florastore.php"><img src="images/flora.jpg"/></a>
                     </div>
                 </div>
 
-                <div class="serviços-single">
-                    <div class="serviço-text">
-                        <div class="serviço-img"><img src="images/web-design.png" /></div>
-                        <h2>Web Design</h2>
-                        <p>Design com grids personalizados, habilidades com a ferramenta <b>Figma</b>. Tratamento de imagens com <b>Lightroom</b> e <b>Photoshop</b>.</p>
+                <div class="sprojetos-linha2">
+                    <div class="sprojetos-single">
+                        <a href="pages/monguilhott.php"><img src="images/mong.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/metaloop.php"><img src="images/meta.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/rmveiculos.php"><img src="images/rm.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/lumicorp.php"><img src="images/lumi.jpg"/></a>
                     </div>
                 </div>
 
-                <div class="serviços-single">
-                    <div class="serviço-text">
-                        <div class="serviço-img"><img src="images/manutencao-de-site.png" /></div>
-                        <h2>Manutenção</h2>
-                        <p><b>Atualizações</b> mensais, relatório de performance, <b>backup</b>, certificado de segurança <b>(SSL)</b>, migração, <b>otimização de imagens</b>.</p>
+                <div class="sprojetos-linha3">
+                    <div class="sprojetos-single">
+                        <a href="pages/aribot.php"><img src="images/ari.jpg"/></a>
+                    </div>
+
+                    <div class="sprojetos-single">
+                        <a href="pages/becacol.php"><img src="images/beca.jpg"/></a>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
+                </div>
 
-    <section class="projetos">
-        <div class="container">
-
-            <div class="title">
-                <h2><x>Últimos</x> <z>projetos.</z></h2>
-                <p>Confira os melhores até aqui!</p>
             </div>
 
-            <div class="projetos-wrapper">
+            <div class="sprojetos-wrapper mw">
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
+                <div class="sprojetos-single">
                     <a href="pages/mountaintour.php"><img src="images/mountain.jpg"/></a>
-                </div><!--projetos-single-->
+                </div>
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
-                    <a href="pages/lumicorp.php"><img src="images/lumi.jpg"/></a>
-                </div><!--projetos-single-->
+                <div class="sprojetos-single">
+                    <a href="pages/heysam.php"><img src="images/hey.jpg"/></a>
+                </div>
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
+                <div class="sprojetos-single">
                     <a href="pages/florastore.php"><img src="images/flora.jpg"/></a>
-                </div><!--projetos-single-->
+                </div>
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
+                <div class="sprojetos-single">
                     <a href="pages/monguilhott.php"><img src="images/mong.jpg"/></a>
-                </div><!--projetos-single-->
+                </div>
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
+                <div class="sprojetos-single">
                     <a href="pages/metaloop.php"><img src="images/meta.jpg"/></a>
-                </div><!--projetos-single-->
+                </div>
 
-                <div class="projetos-single">
-                <!--<div class="overlay"></div>-->
+                <div class="sprojetos-single">
                     <a href="pages/rmveiculos.php"><img src="images/rm.jpg"/></a>
-                </div><!--projetos-single-->
+                </div>
 
-            </div><!--projetos-wrapper-->
+                <div class="sprojetos-single">
+                    <a href="pages/lumicorp.php"><img src="images/lumi.jpg"/></a>
+                </div>
 
-            <div class="botao-bottom">
-                <a href="projetos.php"><button>Ver todos os projetos.</button></a>
+                <div class="sprojetos-single">
+                    <a href="pages/aribot.php"><img src="images/ari.jpg"/></a>
+                </div>
+
+                <div class="sprojetos-single">
+                    <a href="pages/.php"><img src="images/mountain.jpg"/></a>
+                </div>
+
             </div>
 
         </div>
@@ -180,7 +183,7 @@
             </div>
 
             <div class="botao-bottom">
-                <a href="https://api.whatsapp.com/send/?phone=15058000945&text=Olá%2C+poderia+me+ajudar%3F&type=phone_number&app_absent=0"><button>Inicie seu projeto.</button></a>
+                <a href="https://api.whatsapp.com/send/?phone=15058000945&text=Olá%2C+poderia+me+ajudar%3F&type=phone_number&app_absent=0"><button>Conversar no whatsapp.</button></a>
             </div>
 
         </div>
@@ -192,7 +195,7 @@
                 <h2>Hx Info</h2>
                 <div class="footermenu">
                     <ul>
-                        <li><a href="projetos.php">Projetos</a></li>
+                        <li class="selected"><a href="projetos.php">Projetos</a></li>
                         <li><a href="contato.php">Contato</a></li>
                         <li><a href="parceiros.php">Parceiros</a></li>
                     </ul>
