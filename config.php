@@ -9,16 +9,16 @@
 	spl_autoload_register($autoload);
 
 
-	define('INCLUDE_PATH','?');
+	define('INCLUDE_PATH','http://localhost/localhost/portif%c3%b3lio/final_portifolio/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel');
 	
 	//Conectar com banco de dados!
-	define('HOST','?');
-	define('USER','?');
-	define('PASSWORD','?');
-	define('DATABASE','?');
+	define('HOST','localhost');
+	define('USER','root');
+	define('PASSWORD','');
+	define('DATABASE','db_port');
 
 	//Constantes para o painel de controle
 	define('NOME_EMPRESA','Hx Info');
