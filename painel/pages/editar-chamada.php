@@ -52,6 +52,11 @@
 		<?php } ?>
 
 		<div class="form-group">
+			<label>Imagem na tela de celular:</label>
+			<input type="text" name="imgmobile" value="<?php echo $site['imgmobile']; ?>" />
+		</div><!--form-group-->
+
+		<div class="form-group">
 			<label>Texto nas imagens:</label>
 			<input type="checkbox" name="textdisplay" id="textdisplay" value="<?php echo $site['textdisplay']; ?>" />
 		</div><!--form-group-->
