@@ -68,10 +68,11 @@
                 <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/<?php echo $chamadaSite['img3']; ?>.jpg');" class="banner-single"></div><!--banner-single-->
                 <!--<div class="overlay"></div><!--overlay-->
             </div><!--bg-img-->
+            <div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/<?php echo $chamadaSite['imgmobile']; ?>.jpg');" class="banner-mobile"></div><!--banner-single-->
             <div class="bg-text" style="display:<?php echo $chamadaSite['textdisplay'] ?>;">
                 <h2><?php echo $chamadaSite['titulo']; ?></h2>
                 <p><?php echo $chamadaSite['sub_titulo']; ?></p>
-                <!--<a href="#sobre" style="background:<?php echo $chamadaSite['corbotao'] ?>;"><?php echo $chamadaSite['botao']; ?></a>-->
+                <a href="#sobre" style="background:<?php echo $chamadaSite['corbotao'] ?>;"><?php echo $chamadaSite['botao']; ?></a>
             </div><!--bg-text-->
         </div><!--container-->
         <div class="bullets"></div><!--bullets-->
@@ -186,7 +187,7 @@
                 <div class="depoimento-single">
                     <p class="depoimento-descricao">"<?php echo $value['depoimento']; ?>"</p>
                     <p class="nome-autor"><?php echo $value['nome']; ?> - <?php echo $value['data']; ?></p>
-                    <img src="images/<?php echo $value['imgdepoimento']; ?>.png" />
+                    <img src="<?php echo INCLUDE_PATH; ?>images/<?php echo $value['imgdepoimento']; ?>.png" />
                 </div><!--depoimento-single-->
                 <?php } ?>
             </div><!--w50-->
@@ -194,9 +195,6 @@
                 <h2>Serviços</h2>
             </div><!--title-->
             <div id="servicos" class="w50 left servicos-container">
-            <div class="servicos-img">
-                    <img src="images/servicos.jpg" />
-                </div>
                 <div class="servicos">
                 <ul>
                     <?php
@@ -209,6 +207,9 @@
                     <?php } ?>
                 </ul>
                 </div><!--servicos-->
+                <div class="servicos-img">
+                    <img src="images/servicos.jpg" />
+                </div>
 
             </div><!--w50-->
             <div class="clear"></div>
